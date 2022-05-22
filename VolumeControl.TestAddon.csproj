@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="VolumeControl.API">
+      <HintPath>..\_repo\volume-control-3\VolumeControl\bin\Debug\net6.0-windows\VolumeControl.API.dll</HintPath>
+    </Reference>
+    <Reference Include="VolumeControl.Audio">
+      <HintPath>..\_repo\volume-control-3\VolumeControl\bin\Debug\net6.0-windows\VolumeControl.Audio.dll</HintPath>
+    </Reference>
+    <Reference Include="VolumeControl.Core">
+      <HintPath>..\_repo\volume-control-3\VolumeControl\bin\Debug\net6.0-windows\VolumeControl.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="VolumeControl.Hotkeys">
+      <HintPath>..\_repo\volume-control-3\VolumeControl\bin\Debug\net6.0-windows\VolumeControl.Hotkeys.dll</HintPath>
+    </Reference>
+    <Reference Include="VolumeControl.Log">
+      <HintPath>..\_repo\volume-control-3\VolumeControl\bin\Debug\net6.0-windows\VolumeControl.Log.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
