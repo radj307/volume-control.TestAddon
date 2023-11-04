@@ -1,0 +1,22 @@
+﻿<ResourceDictionary
+    x:Class="VolumeControl.TestAddon.DataTemplateProviders.TemplateDictionaryProvider"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:core="clr-namespace:VolumeControl.Core;assembly=VolumeControl.Core"
+    xmlns:setting="clr-namespace:VolumeControl.Core.Input.Actions.Settings;assembly=VolumeControl.Core"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <core:ActionSettingDataTemplate
+        x:Key="MultiLineStringDataTemplate"
+        DataType="{x:Type setting:IActionSettingInstance}"
+        ValueType="{x:Type sys:String}">
+        <TextBox
+            Margin="5,3"
+            AcceptsReturn="True"
+            KeyUp="TextBox_KeyUp"
+            Text="{Binding Value, UpdateSourceTrigger=LostFocus}"
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto" />
+    </core:ActionSettingDataTemplate>
+
+</ResourceDictionary>
